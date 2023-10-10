@@ -1,0 +1,236 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Ubuntu', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: antiquewhite;
+}
+ 
+/* navigation bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+/* navbar logo and images */
+
+#logo img{
+    height: 5rem;
+    margin: 2rem 2rem;
+    
+}
+#logo{
+    width: 200px;
+}
+
+/* navigation bar list styling */
+#navbar ul{
+    display: flex;
+    align-items: center;
+    
+}
+
+#navbar ul li{
+    list-style: none;
+   
+
+}
+#navbar ul li a{
+    padding: 1rem 3rem;
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 2rem;
+    font-weight: bold;
+}
+#navbar ul li a:hover{
+    color: black;
+    background: white;
+}
+
+/* home section */
+#home{
+    display: flex;
+    padding: 1rem 10rem;
+    flex-direction: column;
+    margin-bottom:2rem;
+    /* height: 33rem; */
+    font-family: 'IBM Plex Sans', sans-serif;
+    /* color: white; */
+    font-size: 1.2rem;
+    
+    
+}
+
+#home::before{
+    content: '';
+    /* background: url('../images/bg/bg4.jpg') no-repeat center center/cover; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 80%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+
+
+    
+}
+
+#home h1{
+    color: white;
+    
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+#userimage{
+    width: 4rem;
+    margin-right: 1rem;
+}
+#user{
+    display: flex;
+}
+.postcontainer{
+    margin-bottom: 2rem;
+}
+
+/* buttons styling home page  */
+.btn{
+    padding: 10px;
+    margin-top: 3rem;
+    font-size: large;
+    width: 10rem;
+    background-color:black;
+    cursor: pointer;
+    
+
+}
+.btn:hover{
+    transition:all 0.2s 0s;
+    scale: 1.1;
+}
+
+
+#yesnocontainer{
+    display: flex;
+    width: 20rem;
+    position: relative;
+    margin-left: 50rem;
+}
+
+.yesnobtn{
+    margin: 1rem;
+    padding: 10px;
+    margin-top: 3rem;
+    font-size: large;
+    width: 10rem;
+    background-color: beige;
+    cursor: pointer;
+}
+
+/* Comments section */
+#CommentSection{
+    
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center; 
+    align-items: center;
+    /* padding: 2rem 10rem; */
+    color: black;
+    font-family: 'IBM Plex Sans', sans-serif;
+
+}
+
+
+#commentbox{
+    width: 50%;
+    margin-left: 5rem;
+    border: 2px solid black;
+}
+
+textarea{
+    border-radius: 0.3rem;
+    font-size: 2rem;
+    
+
+}
+
+/* files uploading section */
+#uploadfiles{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: center;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    font-size: large;
+}
+
+.uploadfiles{
+    display: flex;
+
+    width: 10rem;
+}
+/* foot design */
+footer{
+    font-size: large;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;
+    color: white;
+    padding: 0.5rem 1rem;
+}
+
+/* utility classes */
+
+.h-primary{
+    font-size: 2.7rem;
+    padding: 1rem 1rem; 
+}
+.h-secondary{
+    font-size: 2rem;
+    padding: 1rem 1rem; 
+    text-align: center;
+
+}
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color:lightcoral;
+    cursor: pointer;
+    margin: 2rem 2rem;
+    border-radius: 10px;
+}
+.center{
+    
+    text-align: center;
+}
+
+.yellow{
+    background-color: rgb(85, 194, 55);
+}
+
+.anonymousimg{
+    width: 2rem;
+    
+}
